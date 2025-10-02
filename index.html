@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="page.title">AMR | Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="img/logo.jpeg" href="img/logoamrcircle.png">
+</head>
+<body>
+    <!-- Floating Background Elements -->
+    <div class="floating-elements">
+        <div class="floating-element" style="width: 100px; height: 100px; top: 10%; left: 5%;"></div>
+        <div class="floating-element" style="width: 150px; height: 150px; top: 60%; left: 80%;"></div>
+        <div class="floating-element" style="width: 80px; height: 80px; top: 80%; left: 10%;"></div>
+        <div class="floating-element" style="width: 120px; height: 120px; top: 20%; left: 70%;"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="img/amirulshblogo.png" alt="Amirul SHB Logo">
+                    <span data-translate="nav.logo">WebDev.</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" data-translate="nav.home">Home</a></li>
+                    <li><a href="#about" data-translate="nav.about">About</a></li>
+                    <li><a href="#projects" data-translate="nav.projects">Projects</a></li>
+                    <li><a href="#skills" data-translate="nav.skills">Skills</a></li>
+                    <li><a href="#contact" data-translate="nav.contact">Contact</a></li>
+                </ul>
+                <div class="nav-controls">
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="lang-toggle" onclick="toggleLanguage()" id="langToggle">
+                        <span id="langIndicator">EN</span>
+                    </button>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Muhammad Amirul Hadi<br>
+                    <span class="highlight" data-translate="hero.title">Web Developer & IoT Specialist</span>
+                </h1>
+                <p data-translate="hero.description">Freelance developer with 3 years of experience in web app development, systems, and IoT solutions. Based in Malaysia.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn" data-translate="hero.viewProjects">View My Projects</a>
+                    <a href="#contact" class="btn btn-outline" data-translate="hero.contactMe">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-translate="about.title">About Me</h2>
+                <p data-translate="about.subtitle">Computer Science Student and Freelancer with experience in web and system development</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="img/mirul.jpg" alt="Muhammad Amirul Hadi">
+                </div>
+                <div class="about-text">
+                    <h3 data-translate="about.content.title">Computer Science Student & Freelance Developer</h3>
+                    <p data-translate="about.content.paragraph1">I am a Computer Science student with a deep interest in web development, applications, and IoT systems. With 3 years of experience, I have successfully completed various projects for clients and academic requirements.</p>
+                    <p data-translate="about.content.paragraph2">I have skills in various technologies including HTML, CSS, JavaScript, PHP, Java, Flutter, and many more. I always strive to produce high-quality solutions that meet client requirements.</p>
+                    <p data-translate="about.content.paragraph3">As a dedicated and disciplined individual, I am always looking for opportunities to improve my skills and knowledge in the ever-evolving field of technology.</p>
+                    <a href="#contact" class="btn" data-translate="hero.contactMe">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-translate="projects.title">My Projects</h2>
+                <p data-translate="projects.subtitle">Some of my successfully completed projects</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1581276879432-15e50529f34b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Static Web Majlis Pengawas Sekolah">
+                    </div>
+                    <div class="project-content">
+                        <h3 data-translate="projects.project1.title">School Prefects Council Static Website</h3>
+                        <p data-translate="projects.project1.description">Static website for school prefects council with responsive and modern design.</p>
+                        <div class="project-tags">
+                            <span class="tag" data-translate="projects.tags.html">HTML/CSS</span>
+                            <span class="tag" data-translate="projects.tags.js">JavaScript</span>
+                            <span class="tag" data-translate="projects.tags.static">Static Web</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/lewat.jpg" alt="Sistem Kehadiran Lewat Pelajar">
+                    </div>
+                    <div class="project-content">
+                        <h3 data-translate="projects.project2.title">Student Late Attendance System</h3>
+                        <p data-translate="projects.project2.description">Digital system to manage and monitor late student attendance at school.</p>
+                        <div class="project-tags">
+                            <span class="tag" data-translate="projects.tags.html">HTML/CSS</span>
+                            <span class="tag" data-translate="projects.tags.js">JAVASCRIPT</span>
+                            <span class="tag" data-translate="projects.tags.webapp">Web App</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Aplikasi Android">
+                    </div>
+                    <div class="project-content">
+                        <h3 data-translate="projects.project3.title">Android Application - National Level</h3>
+                        <p data-translate="projects.project3.description">Android application that won a competition at the national level.</p>
+                        <div class="project-tags">
+                            <span class="tag" data-translate="projects.tags.flutter">Flutter</span>
+                            <span class="tag" data-translate="projects.tags.android">Android</span>
+                            <span class="tag" data-translate="projects.tags.mobile">Mobile App</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/tempah.jpg" alt="Sistem Tempahan Makanan">
+                    </div>
+                    <div class="project-content">
+                        <h3 data-translate="projects.project4.title">Restaurant Food Reservation System</h3>
+                        <p data-translate="projects.project4.description">Online system for food reservations at restaurants with menu and order management.</p>
+                        <div class="project-tags">
+                            <span class="tag" data-translate="projects.tags.php">PHP</span>
+                            <span class="tag" data-translate="projects.tags.mysql">MySQL</span>
+                            <span class="tag" data-translate="projects.tags.fullstack">Full Stack</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/park.png" alt="Smart Parking System">
+                    </div>
+                    <div class="project-content">
+                        <h3 data-translate="projects.project5.title">Smart Parking System </h3>
+                        <p data-translate="projects.project5.description">Built a web-based smart parking system with features such as user registration, booking, slot availability track</p>
+                        <div class="project-tags">
+                            <span class="tag" data-translate="projects.tags.fullstack">Full Stack</span>
+                            <span class="tag" data-translate="projects.tags.iot">IoT</span>
+                            <span class="tag" data-translate="projects.tags.webapp">Web App</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/iot.jpg" alt="Automatic Water Pump">
+                    </div>
+                    <div class="project-content">
+                        <h3 data-translate="projects.project6.title">IoT Automatic Water Pump System</h3>
+                        <p data-translate="projects.project6.description">Automatic water pump system using IoT technology for remote control and monitoring.</p>
+                        <div class="project-tags">
+                            <span class="tag" data-translate="projects.tags.iot">IoT</span>
+                            <span class="tag" data-translate="projects.tags.arduino">Arduino</span>
+                            <span class="tag" data-translate="projects.tags.automation">Automation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-translate="skills.title">Technical Skills</h2>
+                <p data-translate="skills.subtitle">Technologies and skills I have mastered</p>
+            </div>
+            <div class="skills-container">
+                <!-- Frontend Skills -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> <span data-translate="skills.frontend">Frontend Development</span></h3>
+                    <ul class="skill-list">
+                        <li>
+                            <span>HTML/CSS</span>
+                            <div class="skill-level"><div class="skill-level-bar" style="width: 95%"></div></div>
+                        </li>
+                        <li>
+                            <span>JavaScript</span>
+                            <div class="skill-level"><div class="skill-level-bar" style="width: 90%"></div></div>
+                        </li>
+                        <li>
+                            <span>React.js</span>
+                            <div class="skill-level"><div class="skill-level-bar" style="width: 85%"></div></div>
+                        </li>
+                        <li>
+                            <span>Next.js</span>
+                            <div class="skill-level"><div class="skill-level-bar" style="width: 80%"></div></div>
+                        </li>
+                        <li>
+                            <span>React Native</span>
+                            <div class="skill-level"><div class="skill-level-bar" style="width: 75%"></div></div>
+                        </li>
+                        <li>
+                            <span>Bootstrap</span>
+                            <div class="skill-level"><div class="skill-level-bar" style="width: 90%"></div></div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Backend Skills -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> <span data-translate="skills.backend">Backend Development</span></h3>
+                    <ul class="skill-list">
+                        <li>
+                            <span>PHP</span>
+                            <div class="skill-level"><div class="skill-level-bar" style="width: 85%"></div></div>
+                        </li>
+                        <li>
+                            <span>Node.js</span>
+                            <div class="skill-level"><div class="skill-level-bar" style="width: 80%"></div></div>
+                        </li>
+                        <li>
+                            <span>Java</span>
+                            <div class="skill-level"><div class="skill-level-bar" style="width: 75%"></div></div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Database Skills -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> <span data-translate="skills.database">Database</span></h3>
+                    <ul class="skill-list">
+                        <li>
+                            <span>MySQL</span>
+                            <div class="skill-level"><div class="skill-level-bar" style="width: 90%"></div></div>
+                        </li>
+                        <li>
+                            <span>MongoDB</span>
+                            <div class="skill-level"><div class="skill-level-bar" style="width: 75%"></div></div>
+                        </li>
+                        <li>
+                            <span>SQL</span>
+                            <div class="skill-level"><div class="skill-level-bar" style="width: 85%"></div></div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Mobile & IoT Skills -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-mobile-alt"></i> <span data-translate="skills.mobile">Mobile & IoT</span></h3>
+                    <ul class="skill-list">
+                        <li>
+                            <span>Flutter</span>
+                            <div class="skill-level"><div class="skill-level-bar" style="width: 80%"></div></div>
+                        </li>
+                        <li>
+                            <span>Arduino</span>
+                            <div class="skill-level"><div class="skill-level-bar" style="width: 70%"></div></div>
+                        </li>
+                        <li>
+                            <span>React Native</span>
+                            <div class="skill-level"><div class="skill-level-bar" style="width: 75%"></div></div>
+                        </li>
+                        <li>
+                            <span>IoT Systems</span>
+                            <div class="skill-level"><div class="skill-level-bar" style="width: 75%"></div></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-translate="contact.title">Contact Me</h2>
+                <p data-translate="contact.subtitle">Feel free to contact me for any projects or inquiries</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4 data-translate="contact.email">Email</h4>
+                            <p>amirulshaubari@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4 data-translate="contact.location">Location</h4>
+                            <p>Malaysia</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4 data-translate="contact.career">Career</h4>
+                            <p>Freelance / Web Developer</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/amirul.shb?igsh=MTV4aDFkOWQ0emE2eQ==" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="contact">
+                        <p class="hidden">
+                            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                        </p>
+                        <div class="form-group">
+                            <label for="name" data-translate="contact.form.name">Name</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-translate="contact.form.email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" data-translate="contact.form.subject">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-control" placeholder="" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-translate="contact.form.message">Message</label>
+                            <textarea id="message" name="message" class="form-control" placeholder="" required></textarea>
+                        </div>
+                        <div class="form-group form-submit">
+                            <button type="submit" class="btn" data-translate="contact.form.send">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo" data-translate="footer.logo">AMIRUL SHB</div>
+                <ul class="footer-links">
+                    <li><a href="#home" data-translate="nav.home">Home</a></li>
+                    <li><a href="#about" data-translate="nav.about">About</a></li>
+                    <li><a href="#projects" data-translate="nav.projects">Projects</a></li>
+                    <li><a href="#skills" data-translate="nav.skills">Skills</a></li>
+                    <li><a href="#contact" data-translate="nav.contact">Contact</a></li>
+                </ul>
+                <p class="copyright" data-translate="footer.copyright">&copy; 2025 AMR|SHB. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
